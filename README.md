@@ -76,23 +76,17 @@ credit-growth-acceleration-banking-crises/
 |-- README.md
 |-- LICENSE
 |-- .gitignore
-|-- reports/
+|-- docs/
 |   `-- credit-growth-and-acceleration-as-predictors-of-banking-crises.pdf
-|-- src/
-|   |-- master_credit_growth_banking_crises.do
-|   |-- 01_data_preparation.do
-|   |-- 02_descriptive_statistics.do
-|   |-- 03_panel_logit_models.do
-|   `-- 04_robustness_checks.do
+|   `-- credit-growth-and-acceleration-banking-crises.TEX
+|-- scripts/
+|   `-- master_credit_growth_banking_crises.do
 |-- data/
-|   |-- bis_credit.csv
-|   |-- crisis_laeven_valencia.csv
-|   |-- macro_controls.csv
-|   `-- panel_final.dta
+|   |-- 00_raw/
+|   `-- 01_panel/
 `-- figures/
-    |-- fig1_credit_panel.png
-    |-- fig2_credit_acceleration.png
-    |-- fig_roc_curve.png
+    |-- 1..png
+    |-- 2..png
     `-- ...
 ```
 
@@ -103,7 +97,7 @@ credit-growth-acceleration-banking-crises/
 The master script:
 
 ```text
-src/master_credit_growth_banking_crises.do
+scripts/master_credit_growth_banking_crises.do
 ```
 
 executes the full workflow:
